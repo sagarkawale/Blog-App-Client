@@ -25,7 +25,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post("/api/v1/user/login", {
+      const { data } = await axios.post("https://blog-app-server-8j83.onrender.com/api/v1/user/login", {
         email: inputs.email,
         password: inputs.password,
       });

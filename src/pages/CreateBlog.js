@@ -28,7 +28,7 @@ const CreateBlog = () => {
     e.preventDefault();
     setLoading(true); // Show loading indicator while submitting
     try {
-      const { data } = await axios.post("/api/v1/blog/create-blog", {
+      const { data } = await axios.post("https://blog-app-server-8j83.onrender.com/api/v1/blog/create-blog", {
         title: inputs.title,
         description: inputs.description,
         image: inputs.image,
